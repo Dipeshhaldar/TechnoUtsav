@@ -1,5 +1,5 @@
 // Navbar.js
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
@@ -25,6 +25,14 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-items">
+        <NavLink
+            to="/home"
+            className="navbar-item"
+            style={{ borderBottom: location.pathname === '/home' ? '2px solid white' : 'none' }}
+            onClick={closeSidebar}
+          >
+            Home
+          </NavLink>
           <NavLink
             to="/events"
             className="navbar-item"
@@ -56,10 +64,10 @@ const Navbar = () => {
       </div>
       {showSidebar && (
         <div className="sidebar">
-          <div className="sidebar-close" onClick={closeSidebar}>
-            <FaTimes />
-          </div>
           <div className="sidebar-items">
+          <NavLink to="/home" className="sidebar-item" onClick={closeSidebar}>
+              Home
+            </NavLink>
             <NavLink to="/events" className="sidebar-item" onClick={closeSidebar}>
               Events
             </NavLink>
