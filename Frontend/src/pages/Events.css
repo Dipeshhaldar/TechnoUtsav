@@ -1,3 +1,5 @@
+/* Events.css */
+
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
@@ -40,6 +42,40 @@ body {
   margin: 15px 500px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
+
+@media only screen and (max-width: 767px) {
+  .outer-event-container .heading-event {
+    font-size: 1.5rem; 
+    margin: 20px 20px;
+    text-align: center;
+  }
+
+  .outer-event-container .heading2-event {
+    font-size: 3.5em; 
+    margin: 0 30px;
+  }
+
+  .outer-event-container .heading3-event {
+    margin: 15px 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .outer-event-container .heading-event {
+    font-size: 1.8rem;
+  }
+
+  .outer-event-container .heading2-event {
+    font-size: 6em; 
+  }
+
+  .outer-event-container .heading3-event {
+    margin: 15px 100px; 
+  }
+}
+
 
 @keyframes colorShadowChange {
   0% {
