@@ -21,12 +21,12 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-logo">
           <Link to="/" className="logo-link" onClick={closeSidebar}>
-            <img src="/HomePage/TechnoLogo.png" alt="Logo" width="160" height="80" />
+            <img src="/HomePage/TechnoLogo.png" alt="Logo"/>
           </Link>
         </div>
         <div className="navbar-items">
         <NavLink
-            to="/home"
+            to="/"
             className="navbar-item"
             style={{ borderBottom: location.pathname === '/home' ? '2px solid white' : 'none' }}
             onClick={closeSidebar}
@@ -65,7 +65,7 @@ const Navbar = () => {
       {showSidebar && (
         <div className="sidebar">
           <div className="sidebar-items">
-          <NavLink to="/home" className="sidebar-item" onClick={closeSidebar}>
+          <NavLink to="/" className="sidebar-item" onClick={closeSidebar}>
               Home
             </NavLink>
             <NavLink to="/events" className="sidebar-item" onClick={closeSidebar}>
