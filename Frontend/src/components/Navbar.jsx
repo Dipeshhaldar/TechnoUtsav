@@ -43,7 +43,7 @@ const Navbar = () => {
               borderBottom:
                 location.pathname === "/events" ? "2px solid white" : "none",
             }}
-            onClick={closeSidebar}
+            onClick={closeSidebar} /*updated */
           >
             Events
           </NavLink>
