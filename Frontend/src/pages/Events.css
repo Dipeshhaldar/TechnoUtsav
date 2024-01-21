@@ -58,7 +58,8 @@ body {
   }
 
   .outer-event-container .heading3-event {
-    margin: 15px 10px;
+    margin: 30px 10px;
+    font-size: 1.5rem;
   }
 }
 
@@ -73,6 +74,7 @@ body {
 
   .outer-event-container .heading3-event {
     margin: 15px 100px; 
+    font-size: 1.5rem;
   }
 }
 
