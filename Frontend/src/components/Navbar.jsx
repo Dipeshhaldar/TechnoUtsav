@@ -1,8 +1,8 @@
 // Navbar.js
-import { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import { NavLink, Link, useLocation } from 'react-router-dom';
-import './Navbar.css';
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { NavLink, Link, useLocation } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -21,14 +21,17 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-logo">
           <Link to="/" className="logo-link" onClick={closeSidebar}>
-            <img src="/HomePage/TechnoLogo.png" alt="Logo"/>
+            <img src="/HomePage/TechnoLogo.png" alt="Logo" />
           </Link>
         </div>
         <div className="navbar-items">
-        <NavLink
+          <NavLink
             to="/"
             className="navbar-item"
-            style={{ borderBottom: location.pathname === '/home' ? '2px solid white' : 'none' }}
+            style={{
+              borderBottom:
+                location.pathname === "/home" ? "2px solid white" : "none",
+            }}
             onClick={closeSidebar}
           >
             Home
@@ -36,7 +39,10 @@ const Navbar = () => {
           <NavLink
             to="/events"
             className="navbar-item"
-            style={{ borderBottom: location.pathname === '/events' ? '2px solid white' : 'none' }}
+            style={{
+              borderBottom:
+                location.pathname === "/events" ? "2px solid white" : "none",
+            }}
             onClick={closeSidebar}
           >
             Events
@@ -44,7 +50,12 @@ const Navbar = () => {
           <NavLink
             to="/leaderboard"
             className="navbar-item"
-            style={{ borderBottom: location.pathname === '/leaderboard' ? '2px solid white' : 'none' }}
+            style={{
+              borderBottom:
+                location.pathname === "/leaderboard"
+                  ? "2px solid white"
+                  : "none",
+            }}
             onClick={closeSidebar}
           >
             Leaderboard
@@ -52,7 +63,10 @@ const Navbar = () => {
           <NavLink
             to="/about"
             className="navbar-item"
-            style={{ borderBottom: location.pathname === '/about' ? '2px solid white' : 'none' }}
+            style={{
+              borderBottom:
+                location.pathname === "/about" ? "2px solid white" : "none",
+            }}
             onClick={closeSidebar}
           >
             About
@@ -65,16 +79,28 @@ const Navbar = () => {
       {showSidebar && (
         <div className="sidebar">
           <div className="sidebar-items">
-          <NavLink to="/" className="sidebar-item" onClick={closeSidebar}>
+            <NavLink to="/" className="sidebar-item" onClick={closeSidebar}>
               Home
             </NavLink>
-            <NavLink to="/events" className="sidebar-item" onClick={closeSidebar}>
+            <NavLink
+              to="/events"
+              className="sidebar-item"
+              onClick={closeSidebar}
+            >
               Events
             </NavLink>
-            <NavLink to="/leaderboard" className="sidebar-item" onClick={closeSidebar}>
+            <NavLink
+              to="/leaderboard"
+              className="sidebar-item"
+              onClick={closeSidebar}
+            >
               Leaderboard
             </NavLink>
-            <NavLink to="/about" className="sidebar-item" onClick={closeSidebar}>
+            <NavLink
+              to="/about"
+              className="sidebar-item"
+              onClick={closeSidebar}
+            >
               About
             </NavLink>
           </div>
