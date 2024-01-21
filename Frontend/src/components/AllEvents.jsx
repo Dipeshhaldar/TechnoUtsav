@@ -1,7 +1,9 @@
 import { Fragment, useEffect, useState } from 'react';
+import { Link, useNavigate  } from 'react-router-dom';
 import './AllEvents.css';
 
 const AllEvents = () => {
+  const navigate = useNavigate();
 
   const [varchasvaActive, setVarchasvaActive] = useState(false);
   const [centerActive, setCenterActive] = useState(false);
@@ -23,6 +25,20 @@ const AllEvents = () => {
     setDepartmentActive(!departmentActive);
     setVarchasvaActive(false); 
     setCenterActive(false); 
+  };
+
+  const imageRoutes = [
+    "/event/thugOfWar",
+    "/event/volleyBall",
+    "/event/chess",
+    "/event/kabAdi",
+    "/event/cricket",
+    "/event/football",
+    "/event/futSal",
+  ];
+
+  const handleImageClick = (index) => {
+    navigate(imageRoutes[index]);
   };
 
   useEffect(() => {
@@ -123,12 +139,18 @@ const AllEvents = () => {
           </div>
         </div>
         {varchasvaActive && (
-          <div className="image-container">
-            {imageUrls.map((url, index) => (
-              <img key={index} src={url} alt={`Image ${index + 1}`} />
-            ))}
-          </div>
-        )}
+            <div className="image-container">
+              {imageUrls.map((url, index) => (
+                <Link key={index} to={imageRoutes[index]}>
+                  <img
+                    src={url}
+                    alt={`Image ${index + 1}`}
+                    onClick={() => handleImageClick(index)}
+                  />
+                </Link>
+              ))}
+            </div>
+          )}
 
         {/* for department */}
 
