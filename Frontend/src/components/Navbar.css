@@ -17,6 +17,16 @@ body {
   backdrop-filter: blur(10px);
 }
 
+.navbar-logo img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px; 
+  height: 80px; 
+  display: flex;
+  align-items: center;
+}
+
 .navbar-container {
   display: flex;
   justify-content: space-between;

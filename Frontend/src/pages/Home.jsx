@@ -1,4 +1,3 @@
-import React from 'react';
 import './Home.css';
 
 const Home = () => {
@@ -10,7 +9,7 @@ const Home = () => {
           <h1>TECHNOUTSAV</h1>
           <h1>2024</h1>
           <p>
-            <img src="/HomePage/Down Button.png" alt="Small Image" height="20" width="20" />
+            <img src="/HomePage/Down Button.png" alt="Small Image" />
           </p>
         </div>
       </div>
