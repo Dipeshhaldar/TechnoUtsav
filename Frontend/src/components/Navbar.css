@@ -131,16 +131,16 @@ body {
 
 @media screen and (max-width: 480px) {
   .navbar-logo img {
-    width: 70px; 
-    height: 30px;
+    width: 140px; 
+    height: 60px;
   }
 
   .navbar-icon {
-    font-size: 1.2rem; 
+    font-size: 2rem; 
     cursor: pointer;
   }
 
   .navbar {
-    padding: 3.5px 0;
+    padding: 15px 0;
   }
 }
