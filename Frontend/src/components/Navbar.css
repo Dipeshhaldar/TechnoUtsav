@@ -51,13 +51,13 @@ body {
 
 .navbar-item:hover,
 .sidebar-item:hover {
-  color: #f5c518; /* Change color on hover */
+  color: #f5c518; 
 }
 
 .navbar-item.active,
 .sidebar-item.active {
   border-bottom: 2px solid white;
-  color: #f5c518; /* Active item color */
+  color: #f5c518; 
 }
   
   .navbar-icon {

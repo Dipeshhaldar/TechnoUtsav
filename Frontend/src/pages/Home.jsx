@@ -1,4 +1,3 @@
-// Home.js
 import React from 'react';
 import './Home.css';
 
@@ -6,7 +5,6 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="background-image">
-        {/* You can replace 'your-image.jpg' with the actual image file */}
         <img src="/HomePage/Chill Out Wallpaper.png" alt="Background" />
         <div className="centered-text">
           <h1>TECHNOUTSAV</h1>
