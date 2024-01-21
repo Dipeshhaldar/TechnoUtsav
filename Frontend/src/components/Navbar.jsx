@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-logo">
           <Link to="/" className="logo-link" onClick={closeSidebar}>
-            <img src="/HomePage/TechnoLogo.png" alt="Logo" />
+            <img src="/HomePage/TechnoLogo2.png" alt="Logo" width="160" height="80" />
           </Link>
         </div>
         <div className="navbar-items">
