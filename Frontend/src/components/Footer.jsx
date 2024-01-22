@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css"; // Import your CSS file for styling
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -28,7 +28,6 @@ const Footer = () => {
         <hr className="footer-line" />
 
         <div className="footer-social">
-          {/* Add your social media logos here */}
           <img src="/HomePage/facebook.png" alt="Facebook Logo" />
           <img src="/HomePage/youtube.png" alt="Twitter Logo" />
           <img src="/HomePage/linkedin.png" alt="Twitter Logo" />
