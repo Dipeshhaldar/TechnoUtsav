@@ -135,3 +135,51 @@ body {
     margin: 15px 100px;
   }
 }
+
+
+@keyframes colorShadowChange {
+  0% {
+    text-shadow: 0 0 10px #ff0000, 0 0 10px #ff0000;
+  }
+  10% {
+    text-shadow: 0 0 20px #00ff00, 0 0 10px #00ff00;
+  }
+  20% {
+    text-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff;
+  }
+  30% {
+    text-shadow: 0 0 20px #ff00ff, 0 0 10px #ff00ff;
+  }
+  40% {
+    text-shadow: 0 0 10px #ffff00, 0 0 5px #ffff00;
+  }
+  50% {
+    text-shadow: 0 0 20px #00ffff, 0 0 10px #00ffff;
+  }
+  60% {
+    text-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600;
+  }
+  70% {
+    text-shadow: 0 0 20px #6600ff, 0 0 10px #6600ff;
+  }
+  80% {
+    text-shadow: 0 0 10px #ff3366, 0 0 40px #ff3366;
+  }
+  90% {
+    text-shadow: 0 0 20px #33ff66, 0 0 10px #33ff66;
+  }
+  100% {
+    text-shadow: 0 0 10px #ff0000, 0 0 10px #ff0000;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
