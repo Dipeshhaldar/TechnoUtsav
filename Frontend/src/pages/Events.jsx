@@ -17,7 +17,7 @@ const Events = () => {
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
-    setShowScrollToTop(scrollY > 200); 
+    setShowScrollToTop(scrollY > 200);
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -37,11 +37,21 @@ const Events = () => {
             to gaming. Participate, witness, and be a part of the phenomenon
           </p>
         </div>
-        <Link className="scroll" to="all-events-section" smooth={true} duration={1000}>
-        <FaAngleDown />
+        <Link
+          className="scroll"
+          to="all-events-section"
+          smooth={true}
+          duration={1000}
+        >
+          <FaAngleDown />
         </Link>
         {showScrollToTop && (
-          <Link className="scroll-to-top" to="outer-event-container" smooth={true} duration={1000}>
+          <Link
+            className="scroll-to-top"
+            to="outer-event-container"
+            smooth={true}
+            duration={1000}
+          >
             <FaAngleUp />
           </Link>
         )}

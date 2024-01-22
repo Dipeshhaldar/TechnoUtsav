@@ -16,7 +16,37 @@ const LeaderBoard = () => {
                         <div className="leaderboard-rows">
                             <div className="leaderboard-row">
                                 <div className="row-number">1</div>
-                                <div className="row-text">Computer Science & Engineering</div>
+                                <div className="row-text">COMPUTER SCIENCE & ENGINEERING</div>
+                                <div className="row-points">00</div>
+                            </div>
+                            <div className="leaderboard-row">
+                                <div className="row-number">2</div>
+                                <div className="row-text">EMERGING TECHNOLOGIES</div>
+                                <div className="row-points">00</div>
+                            </div>
+                            <div className="leaderboard-row">
+                                <div className="row-number">3</div>
+                                <div className="row-text">ELECTRICAL ENGINEERING</div>
+                                <div className="row-points">00</div>
+                            </div>
+                            <div className="leaderboard-row">
+                                <div className="row-number">4</div>
+                                <div className="row-text">ELECTRONICS AND TELECOMMUNICATION ENGINEERING</div>
+                                <div className="row-points">00</div>
+                            </div>
+                            <div className="leaderboard-row">
+                                <div className="row-number">5</div>
+                                <div className="row-text">MECHANICAL ENGINEERING</div>
+                                <div className="row-points">00</div>
+                            </div>
+                            <div className="leaderboard-row">
+                                <div className="row-number">6</div>
+                                <div className="row-text">MASTER OF BUSINESS ADMINISTRATION</div>
+                                <div className="row-points">00</div>
+                            </div>
+                            <div className="leaderboard-row">
+                                <div className="row-number">7</div>
+                                <div className="row-text">FIRST YEAR ENGINEERING</div>
                                 <div className="row-points">00</div>
                             </div>
                         </div>
