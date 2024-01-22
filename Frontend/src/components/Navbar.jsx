@@ -48,7 +48,7 @@ const Navbar = () => {
             Events
           </NavLink>
           <NavLink
-            to="/leaderboard"
+            to="/leaderBoard"
             className="navbar-item"
             style={{
               borderBottom:
