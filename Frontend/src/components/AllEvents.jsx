@@ -235,6 +235,7 @@ const AllEvents = () => {
                   alt={`Image ${index + 1}`}
                   onClick={() => handleImageClick(index)}
                 />
+                <button style={{}}>hello</button>
               </Link>
             ))}
           </div>
