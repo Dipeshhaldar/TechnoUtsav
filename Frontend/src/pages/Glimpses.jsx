@@ -72,12 +72,12 @@ const Glimpses = () => {
               </div>
             ))}
           </div>
-          <button className="arrow left" onClick={goToPrevSlide}>
-            <img src="" alt="" />
+          {/* <button className="arrow left" onClick={goToPrevSlide}>
+            <img src="/HomePage/left-arrow.png" alt="" />
           </button>
           <button className="arrow right" onClick={goToNextSlide}>
             &gt;
-          </button>
+          </button> */}
         </div>
         <Footer />
       </div>

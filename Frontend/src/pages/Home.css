@@ -39,22 +39,23 @@
   position: absolute;
   left: 24rem;
   letter-spacing: 0.5rem;
+  /* top: 8rem; */
 }
 
 .technoutsav__date {
   position: absolute;
   left: 51%;
-  top: 205%;
+  top: 185%;
   font-size: 0.7rem;
   letter-spacing: 0.4rem;
-  font-family: Aldr;
+  font-family: Aldrich;
 }
 
 .centered-text p img {
   position: absolute;
   width: 2.2rem;
   height: 2.2rem;
-  top: 235%;
+  top: 210%;
   left: 58%;
   animation: bounce 2s infinite;
 }
