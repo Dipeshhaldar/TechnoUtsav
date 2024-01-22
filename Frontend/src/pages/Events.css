@@ -13,7 +13,7 @@ body {
   align-items: center;
   background-color: #000000;
   overflow: hidden;
-  background-image: url("/EventsPage/Events 1 1.png");
+  background-image: url("/EventsPage/Events 1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,9 +21,13 @@ body {
 }
 
 .outer-event-container .heading-event {
-  font-size: 2rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgba(255, 255, 255, 0.81);
   text-align: center;
+  font-family: Prompt;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
 }
 
 .outer-event-container .heading2-event {
@@ -36,17 +40,21 @@ body {
 }
 
 .outer-event-container .heading3-event {
+  color: rgba(255, 255, 255, 0.852);
   text-align: center;
+  font-family: Prompt;
   font-size: 20px;
-  margin: 15px 400px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  margin: 0 550px;
 }
 .scroll-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #f9f8f8; 
-  color: #fff; 
+  background-color: #f9f8f8;
+  color: #fff;
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
@@ -56,11 +64,10 @@ body {
   font-size: 20px;
   box-shadow: 0 2px 5px rgba(249, 249, 249, 0.2);
   transition: background-color 0.3s ease;
-  animation: moveUpDown 1s infinite; 
+  animation: moveUpDown 1s infinite;
   animation-timing-function: linear;
   z-index: 100;
 }
-
 
 .scroll {
   padding: 10px;
@@ -69,15 +76,15 @@ body {
   cursor: pointer;
   border-radius: 50%;
   font-size: 2rem;
-  background-color: #1a1a1a; 
-  color: rgba(255, 255, 255, 0.8); 
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.8);
   transition: transform 0.5s ease-in-out;
-  animation: moveUpDown 1s infinite; 
+  animation: moveUpDown 1s infinite;
   animation-timing-function: linear;
 }
 
 .scroll:hover {
-  background-color: #333; 
+  background-color: #333;
 }
 
 @keyframes moveUpDown {
@@ -92,29 +99,25 @@ body {
     border: 4px solid #6600ff;
   }
   75% {
-    color:coral;
+    color: coral;
     border: 4px solid coral;
   }
   100% {
     transform: translateY(0);
     color: #ff00ff;
     border: 4px solid #ff00ff;
+  }
 }
-}
-
-
-
-
 
 @media only screen and (max-width: 767px) {
   .outer-event-container .heading-event {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
     margin: 20px 20px;
     text-align: center;
   }
 
   .outer-event-container .heading2-event {
-    font-size: 3em; 
+    font-size: 3em;
     margin: 0 30px;
   }
 
@@ -130,14 +133,13 @@ body {
   }
 
   .outer-event-container .heading2-event {
-    font-size: 6em; 
+    font-size: 6em;
   }
 
   .outer-event-container .heading3-event {
-    margin: 15px 100px; 
+    margin: 15px 100px;
   }
 }
-
 
 @keyframes colorShadowChange {
   0% {
@@ -174,4 +176,3 @@ body {
     text-shadow: 0 0 10px #ff0000, 0 0 10px #ff0000;
   }
 }
-

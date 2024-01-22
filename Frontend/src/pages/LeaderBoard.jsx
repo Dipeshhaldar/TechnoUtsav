@@ -12,14 +12,11 @@ const LeaderBoard = () => {
                     <div className="leaderBoard-container">
                         <h1 className="heading-leader">LEADERBOARD</h1>
 
-                        {/* Container for rows */}
+                        {/* Container for rows leha yete ata */}
                         <div className="leaderboard-rows">
                             <div className="leaderboard-row">
-                                <div className="row-number">1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Computer Science & Engineering</div>
-                                <div className="row-points">00</div>
-                            </div>
-                            <div className="leaderboard-row">
-                                <div className="row-number">2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Computer Science & Engineering</div>
+                                <div className="row-number">1</div>
+                                <div className="row-text">Computer Science & Engineering</div>
                                 <div className="row-points">00</div>
                             </div>
                         </div>
