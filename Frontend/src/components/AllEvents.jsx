@@ -1,6 +1,6 @@
-import { Fragment, useEffect, useState } from 'react';
-import { Link, useNavigate  } from 'react-router-dom';
-import './AllEvents.css';
+import { Fragment, useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import "./AllEvents.css";
 
 const AllEvents = () => {
   const navigate = useNavigate();
@@ -11,20 +11,20 @@ const AllEvents = () => {
 
   const handleVarchasvaClick = () => {
     setVarchasvaActive(!varchasvaActive);
-    setCenterActive(false); 
-    setDepartmentActive(false); 
+    setCenterActive(false);
+    setDepartmentActive(false);
   };
 
   const handleCenterActive = () => {
     setCenterActive(!centerActive);
-    setVarchasvaActive(false); 
+    setVarchasvaActive(false);
     setDepartmentActive(false);
   };
 
   const handleDepartmentActive = () => {
     setDepartmentActive(!departmentActive);
-    setVarchasvaActive(false); 
-    setCenterActive(false); 
+    setVarchasvaActive(false);
+    setCenterActive(false);
   };
 
   const imageRoutes = [
@@ -42,16 +42,24 @@ const AllEvents = () => {
   };
 
   useEffect(() => {
-    particlesJS('particles-js', {
+    particlesJS("particles-js", {
       particles: {
         number: {
           value: 130,
         },
         color: {
-          value: ['#ff0000', '#00ff00', '#0000ff', "#33ff66", "#ffff00", "#00ffff", "#ff00ff"],
+          value: [
+            "#ff0000",
+            "#00ff00",
+            "#0000ff",
+            "#33ff66",
+            "#ffff00",
+            "#00ffff",
+            "#ff00ff",
+          ],
         },
         shape: {
-          type: 'circle',
+          type: "circle",
         },
         opacity: {
           value: 0.5,
@@ -70,22 +78,22 @@ const AllEvents = () => {
         move: {
           enable: true,
           speed: 10,
-          direction: 'none',
+          direction: "none",
           random: true,
           straight: false,
-          out_mode: 'out',
+          out_mode: "out",
         },
       },
       interactivity: {
-        detect_on: 'canvas',
+        detect_on: "canvas",
         events: {
           onhover: {
             enable: true,
-            mode: 'repulse',
+            mode: "repulse",
           },
           onclick: {
             enable: true,
-            mode: 'push',
+            mode: "push",
           },
         },
         modes: {
@@ -112,9 +120,25 @@ const AllEvents = () => {
   ];
 
   const imageUrlsDepartment = [
-    "/EventsPage/image1.jpg",
-    "/EventsPage/image2.jpg",
-    "/EventsPage/image3.jpg",
+    {
+      heading: "CSE",
+      images: [
+        "/EventsPage/image1.jpg",
+        "/EventsPage/image2.jpg",
+        "/EventsPage/image3.jpg",
+        "/EventsPage/image4.jpg",
+        "/EventsPage/image5.jpg",
+        "/EventsPage/image6.jpg",
+      ],
+    },
+    {
+      heading: "AIML",
+      images: [
+        "/EventsPage/image4.jpg",
+        "/EventsPage/image5.jpg",
+        "/EventsPage/image6.jpg",
+      ],
+    },
   ];
 
   const imageUrlsCenter = [
@@ -129,35 +153,69 @@ const AllEvents = () => {
     <Fragment>
       <div id="particles-js" className="outer-container-all_events">
         <div className="container-event">
-          <div className="center-event" onClick={handleCenterActive}>CenterStage Event</div>
-          <div className="department-event" onClick={handleDepartmentActive}>Department Event</div>
+          <div
+            className="center-event"
+            style={{
+              backgroundColor: centerActive ? "#1D3C9B" : "",
+              border: centerActive ? "1px solid #D9D9D9" : "",
+              color: centerActive ? "#D9D9D9" : "",
+            }}
+            onClick={handleCenterActive}
+          >
+            CenterStage Event
+          </div>
+          <div
+            className="department-event"
+            style={{
+              backgroundColor: departmentActive ? "#1D3C9B" : "",
+              border: departmentActive ? "1px solid #D9D9D9" : "",
+              color: departmentActive ? "#D9D9D9" : "",
+            }}
+            onClick={handleDepartmentActive}
+          >
+            Department Event
+          </div>
           <div
             className="varchasva-event"
+            style={{
+              backgroundColor: varchasvaActive ? "#1D3C9B" : "",
+              border: varchasvaActive ? "1px solid #D9D9D9" : "",
+              color: varchasvaActive ? "#D9D9D9" : "",
+            }}
             onClick={handleVarchasvaClick}
           >
             Varchasva (Sports)
           </div>
         </div>
         {varchasvaActive && (
-            <div className="image-container">
-              {imageUrls.map((url, index) => (
-                <Link key={index} to={imageRoutes[index]}>
-                  <img
-                    src={url}
-                    alt={`Image ${index + 1}`}
-                    onClick={() => handleImageClick(index)}
-                  />
-                </Link>
-              ))}
-            </div>
-          )}
+          <div className="image-container">
+            {imageUrls.map((url, index) => (
+              <Link key={index} to={imageRoutes[index]}>
+                <img
+                  src={url}
+                  alt={`Image ${index + 1}`}
+                  onClick={() => handleImageClick(index)}
+                />
+              </Link>
+            ))}
+          </div>
+        )}
 
         {/* for department */}
 
         {departmentActive && (
-          <div className="image-container">
-            {imageUrlsDepartment.map((url, index) => (
-              <img key={index} src={url} alt={`Image ${index + 1}`} />
+          <div className="image-container-another">
+            {imageUrlsDepartment.map((department, index) => (
+              <Fragment key={index}>
+                <div className="department-heading">{department.heading}</div>
+                {department.images.map((image, imageIndex) => (
+                  <img
+                    key={imageIndex}
+                    src={image}
+                    alt={`Image ${imageIndex + 1}`}
+                  />
+                ))}
+              </Fragment>
             ))}
           </div>
         )}
