@@ -96,7 +96,7 @@
 }
 
 .image-container-another img {
-  width: 14rem;
+  width: 15rem;
   margin-bottom: 10px;
   object-fit: cover;
   margin: 10px;
@@ -165,7 +165,11 @@
     width: 13rem;
   }
   .image-container-another {
-    height: 580px;
-    margin: 10px 20px;
+    height: 550px;
+    margin: 10px 25px;
+    width: 17rem;
+  }
+  .department-heading{
+    font-size: 25px;
   }
 }
