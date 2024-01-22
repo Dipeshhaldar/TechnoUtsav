@@ -54,7 +54,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 /* Images section */
@@ -83,7 +83,7 @@
   margin: 10px;
 }
 
-.image-container-another{
+.image-container-another {
   text-align: center;
   padding: 5px 20px;
   position: absolute;
@@ -95,14 +95,14 @@
   background: rgba(29, 60, 155, 0.3);
 }
 
-.image-container-another img{
+.image-container-another img {
   width: 14rem;
   margin-bottom: 10px;
   object-fit: cover;
   margin: 10px;
 }
 
-.department-heading{
+.department-heading {
   font-size: 50px;
   text-align: center;
 }
@@ -153,19 +153,19 @@
   }
 
   .varchasva-event {
-    padding: 20px 30px 5px 5px;
+    padding: 10px 30px 5px 5px;
   }
 
   .image-container {
-    padding: 20px;
-    top: 130%;
+    width: 77%;
+    text-align: center;
   }
 
   .image-container img {
     width: 13rem;
   }
-  .image-container-another{
+  .image-container-another {
     height: 580px;
-    margin: 20px 40px;
+    margin: 10px 20px;
   }
 }
