@@ -32,12 +32,12 @@
   font-size: 7rem;
   max-width: 80%; 
   margin: 0 auto; 
-  font-family: cursive;
+  font-family: Aldrich;
 }
 
 .Year-2024 {
   position: absolute;
-  left: 24rem;
+  left: 25rem;
   letter-spacing: 0.5rem;
   /* top: 8rem; */
 }
