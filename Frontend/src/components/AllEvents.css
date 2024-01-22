@@ -222,7 +222,7 @@
 }
 
 .image-container a:hover img {
-  filter: blur(5px); /* Adjust the blur amount as needed */
+  filter: blur(5px); 
 }
 
 .image-container a:hover button {
