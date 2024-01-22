@@ -221,7 +221,7 @@ const AllEvents = () => {
               border: varchasvaActive ? "1px solid #D9D9D9" : "",
               color: varchasvaActive ? "#D9D9D9" : "",
             }}
-            onClick={handleVarchasvaClick}
+            onClick={handleVarchasvaClick} 
           >
             Varchasva (Sports)
           </div>
