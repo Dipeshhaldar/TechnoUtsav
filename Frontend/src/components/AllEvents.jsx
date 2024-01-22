@@ -121,7 +121,7 @@ const AllEvents = () => {
 
   const imageUrlsDepartment = [
     {
-      heading: "COMPUTER SCIENCE ENGINEERING",
+      heading: "COMPUTER SCIENCE & ENGINEERING",
       images: [
         "/EventsPage/CSE/HackWhack.png",
         "/EventsPage/CSE/Talash-E-Khazaana.jpg",
@@ -181,11 +181,11 @@ const AllEvents = () => {
   ];
 
   const imageUrlsCenter = [
-    "/EventsPage/image1.jpg",
-    "/EventsPage/image2.jpg",
-    "/EventsPage/image3.jpg",
-    "/EventsPage/image4.jpg",
-    "/EventsPage/image5.jpg",
+    "/EventsPage/center/Fashion show.jpg",
+    "/EventsPage/center/Reborn Band.jpg",
+    "/EventsPage/center/Reel Competition.jpg",
+    "/EventsPage/center/Show Your Talent.png",
+    "/EventsPage/center/YOUTH PARLIAMENT.png",
   ];
 
   return (
@@ -221,7 +221,7 @@ const AllEvents = () => {
               border: varchasvaActive ? "1px solid #D9D9D9" : "",
               color: varchasvaActive ? "#D9D9D9" : "",
             }}
-            onClick={handleVarchasvaClick} 
+            onClick={handleVarchasvaClick}
           >
             Varchasva (Sports)
           </div>
@@ -235,7 +235,7 @@ const AllEvents = () => {
                   alt={`Image ${index + 1}`}
                   onClick={() => handleImageClick(index)}
                 />
-                <button style={{}}>hello</button>
+                <button className="button-container">Fictures</button>
               </Link>
             ))}
           </div>
