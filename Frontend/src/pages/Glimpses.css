@@ -1,0 +1,90 @@
+#background__gradient {
+    background: linear-gradient(#102856, #361C2C);
+    margin-top: -22px;
+}
+
+#glimpses__heading {
+    text-align: center;
+    color: #fff;
+}
+
+.image-slider-container {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    max-width: 980px; /* Set a new maximum width for the slider container */
+    margin: 20px auto; /* Center the slider container and add top margin */
+    padding: 0 20px; /* Add padding to the left and right sides of the container */
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 100%; /* Make each slide take the full width by default */
+    display: flex;
+  }
+  
+  .image-column {
+    flex: 0 0 calc(100% / 3); /* Make each image column take one-third of the width */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .image-column img {
+    width: 100%; /* Make sure the image takes the full width of the column */
+    height: 250px; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain the aspect ratio of the image */
+    border-radius: 8px;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .arrow.left {
+    left: 10px;
+  }
+  
+  .arrow.right {
+    right: 10px;
+  }
+  
+  .active {
+    transform: scale(1.1);
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 480px) {
+    .image-slider-container {
+        max-width: 280px;
+        margin-left: 20px;
+    }
+
+    .image-column {
+        padding: 0 2rem;
+    }
+
+    .slider {
+      flex-wrap: nowrap; /* Prevent wrapping to show one image at a time */
+    }
+  
+    .slide {
+      flex: 0 0 100%; /* Make each slide take the full width */
+    }
+  
+    .image-column {
+      flex: 0 0 100%; /* On mobile, make each image column take the full width */
+    }
+  }
+  
