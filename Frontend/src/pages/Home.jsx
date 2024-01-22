@@ -19,7 +19,7 @@ const Home = () => {
             <br />
             <h1 className="Year-2024">2024</h1>
             <br />
-            <h2 className="technoutsav__date">25 - 27 JANUARY</h2>
+            <h2 className="technoutsav__date">25 - 28 JANUARY</h2>
             <p>
               <a href="#home-details" onClick={(e) => handleScroll(e)}>
                 <img src="/HomePage/Down Button.png" alt="Small Image" />

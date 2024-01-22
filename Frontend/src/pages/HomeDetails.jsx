@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import "./HomeDetails.css";
 
 export default function HomeDetails() {
@@ -5,12 +7,8 @@ export default function HomeDetails() {
     <>
       <div id="home-details" className="container">
         <div className="upper-section">
-          <div className="image-container__1">
-            <img src="/HomePage/event image.png" alt="Event Image" />
-          </div>
           <div className="text-container">
             <h2 className="homedetails__heading">EVENTS</h2>
-
             <div className="vertical-line">
               <p className="Homedetails-event__description">
                 Experience the magic of our annual fest, a celebration of talent
@@ -20,14 +18,17 @@ export default function HomeDetails() {
                 creativity and innovation.
               </p>
             </div>
-            <button className="explore-button">Explore More</button>
+            <Link to="/explore-events" className="explore-button">Explore More</Link>
+          </div>
+          <div className="image-container__1">
+            <img src="/HomePage/event image.png" alt="Event Image" />
           </div>
         </div>
 
         <div className="lower-section">
+          {/* For mobile view, reorder elements */}
           <div className="text-container">
             <h2 className="homedetails__heading">VARCHASVA</h2>
-
             <div className="vertical-line">
               <p className="Homedetails-varchasva__description">
                 Get ready for pulse-pounding action in our fest's Sports
@@ -37,7 +38,7 @@ export default function HomeDetails() {
                 celebrate the true spirit of sportsmanship!
               </p>
             </div>
-            <button className="explore-button">Explore More</button>
+            <Link to="/explore-varchasva" className="explore-button">Explore More</Link>
           </div>
           <div className="image-container__1">
             <img src="/HomePage/workshop image.png" alt="Varchasva Image" />

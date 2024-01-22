@@ -14,6 +14,10 @@
   padding: 20px; 
 }
 
+.lower-section {
+  flex-direction: row-reverse;
+}
+
 .text-container,
 .image-container__1 {
   width: 45%;
@@ -22,6 +26,7 @@
 .homedetails__heading {
   color: #269CBC;
   font-size: 3rem;
+  font-family: 'Prompt', sans-serif;
 }
 
 .Homedetails-event__description,
@@ -29,6 +34,8 @@
   color: #fff;
   margin-left: 20px; 
   text-align: justify;
+  font-size: 1rem;
+  font-family: 'Prompt', sans-serif;
 }
 
 .image-container__1 img {
@@ -51,6 +58,7 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
+  font-family: 'Prompt', sans-serif;
   margin-top: 10px;
   transition: background-color 0.3s, border-color 0.3s; 
 }
