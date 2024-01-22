@@ -73,13 +73,19 @@
   line-height: 100%;
 }
 
+.row-text{
+  font-size: 15px;
+}
+
 .row-number {
   font-weight: bold;
   text-align: left;
+  margin-left: 2rem;
 }
 
 .row-points{
   text-align: right;
+  margin-right: 2rem;
 }
 
 @media screen and (max-width: 768px) {
