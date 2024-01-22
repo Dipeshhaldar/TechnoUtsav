@@ -54,7 +54,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 /* Images section */
@@ -83,7 +83,7 @@
   margin: 10px;
 }
 
-.image-container-another{
+.image-container-another {
   text-align: center;
   padding: 5px 20px;
   position: absolute;
@@ -95,14 +95,14 @@
   background: rgba(29, 60, 155, 0.3);
 }
 
-.image-container-another img{
-  width: 14rem;
+.image-container-another img {
+  width: 15rem;
   margin-bottom: 10px;
   object-fit: cover;
   margin: 10px;
 }
 
-.department-heading{
+.department-heading {
   font-size: 50px;
   text-align: center;
 }
@@ -153,19 +153,79 @@
   }
 
   .varchasva-event {
-    padding: 20px 30px 5px 5px;
+    padding: 10px 30px 5px 5px;
   }
 
   .image-container {
-    padding: 20px;
-    top: 130%;
+    width: 77%;
+    text-align: center;
   }
 
   .image-container img {
     width: 13rem;
   }
-  .image-container-another{
-    height: 580px;
-    margin: 20px 40px;
+  .image-container-another {
+    height: 550px;
+    margin: 10px 25px;
+    width: 17rem;
+  }
+  .department-heading{
+    font-size: 25px;
   }
 }
+
+
+
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  position: absolute;
+  top: 125%;
+  height: 480px;
+  overflow-y: auto;
+  margin: 20px 40px;
+  border: 2px solid #269cbc;
+  background: rgba(29, 60, 155, 0.3);
+}
+
+.image-container a {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 14rem;
+  margin-bottom: 10px;
+  object-fit: cover;
+  margin: 10px;
+  transition: filter 0.3s ease-in-out;
+}
+
+.image-container button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: #1d3c9b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  font-weight: bold;
+  border-radius: 15px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container a:hover img {
+  filter: blur(5px); 
+}
+
+.image-container a:hover button {
+  opacity: 1;
+}
+

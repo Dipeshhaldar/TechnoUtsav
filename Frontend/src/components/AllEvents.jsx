@@ -121,32 +121,71 @@ const AllEvents = () => {
 
   const imageUrlsDepartment = [
     {
-      heading: "CSE",
+      heading: "COMPUTER SCIENCE & ENGINEERING",
       images: [
-        "/EventsPage/image1.jpg",
-        "/EventsPage/image2.jpg",
-        "/EventsPage/image3.jpg",
+        "/EventsPage/CSE/HackWhack.png",
+        "/EventsPage/CSE/Talash-E-Khazaana.jpg",
+        "/EventsPage/CSE/RoadiesX.jpg",
+        "/EventsPage/CSE/Arcade Corner.jpg",
+        "/EventsPage/CSE/RocketLeague.jpg",
+        "/EventsPage/CSE/Valorant.jpg",
+      ],
+    },
+    {
+      heading: "ELECTRICAL ENGINEERING",
+      images: [
         "/EventsPage/image4.jpg",
         "/EventsPage/image5.jpg",
         "/EventsPage/image6.jpg",
       ],
     },
     {
-      heading: "AIML",
+      heading: "EMERGING TECHNOLOGIES",
       images: [
-        "/EventsPage/image4.jpg",
-        "/EventsPage/image5.jpg",
-        "/EventsPage/image6.jpg",
+        "/EventsPage/EmTech/Battleverse.png",
+        "/EventsPage/EmTech/Blind C.jpg",
+        "/EventsPage/EmTech/Bounty hunt.jpg",
+        "/EventsPage/EmTech/Break the query.png",
+        "/EventsPage/EmTech/codotech.jpg",
+        "/EventsPage/EmTech/Data visualizing and dashboard designing.jpg",
+        "/EventsPage/EmTech/Designo.jpg",
       ],
     },
+    {
+      heading: "ELECTRONICS AND TELECOMMUNICATION ENGINEERING",
+      images: [
+        "/EventsPage/ETC/Robo race.jpg",
+        "/EventsPage/ETC/Water Polo.jpg",
+      ],
+    },
+    {
+      heading: "MASTER OF BUSINESS ADMINISTRATION",
+      images: [
+        "/EventsPage/MBA/ACasino7.1.png",
+        "/EventsPage/MBA/Balance Tug of Wa.jpg",
+        "/EventsPage/MBA/Blow the words.jpg",
+        "/EventsPage/MBA/Carpet Golf.jpg",
+        "/EventsPage/MBA/Hit the Ball.png",
+        "/EventsPage/MBA/Shoot the Balloon.png",
+        "/EventsPage/MBA/Twister.jpg",
+      ],
+    },
+    {
+      heading: "MECHANICAL ENGINEERING",
+      images: [
+        "/EventsPage/ME/Horror excape room.jpg",
+        "/EventsPage/ME/Takeshi's Castle.jpg",
+      ],
+    },
+
   ];
 
   const imageUrlsCenter = [
-    "/EventsPage/image1.jpg",
-    "/EventsPage/image2.jpg",
-    "/EventsPage/image3.jpg",
-    "/EventsPage/image4.jpg",
-    "/EventsPage/image5.jpg",
+    "/EventsPage/center/Fashion show.jpg",
+    "/EventsPage/center/Reborn Band.jpg",
+    "/EventsPage/center/Reel Competition.jpg",
+    "/EventsPage/center/Show Your Talent.png",
+    "/EventsPage/center/YOUTH PARLIAMENT.png",
   ];
 
   return (
@@ -196,6 +235,7 @@ const AllEvents = () => {
                   alt={`Image ${index + 1}`}
                   onClick={() => handleImageClick(index)}
                 />
+                <button className="button-container">Fictures</button>
               </Link>
             ))}
           </div>
