@@ -11,6 +11,7 @@ import Volley from "./components/Flow/Volley";
 import Futsal from "./components/Flow/Futsal";
 import Kabbadi from "./components/Flow/Kabbadi";
 import Chess from "./components/Flow/Chess"
+import AboutTimeLine from "./pages/AboutTimeLine";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/events" element={<Events />} />
           <Route path="/leaderBoard" element={<LeaderBoard />} />
+          <Route path="/about" element={<AboutTimeLine />} />
 
 
 

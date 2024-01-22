@@ -1,0 +1,23 @@
+.time__line {
+    font-family: sans-serif;
+    text-align: center;
+    background: url('/AboutPage/about-background.jpg');
+    background-size: cover;
+  }
+  
+  .vertical-timeline::before {
+    /* this is the vertical line */
+    background: rgb(100, 255, 218) !important;
+  }
+  
+  .vertical-timeline-element-content {
+    border: 2px solid rgb(100, 255, 218); /* Green border for each event card */
+    border-bottom: none; /* Remove the baseline */
+  }
+
+  .vertical-timeline-element .vertical-timeline-element-content::before {
+    border: 2px solid rgb(100, 255, 218); /* Border color for the circle */
+  }
+  
+  /* Optional: Adjust the border color and width as needed */
+  
