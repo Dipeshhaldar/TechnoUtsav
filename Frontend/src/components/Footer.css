@@ -1,16 +1,14 @@
-/* Desktop styles (default) */
 .footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px;
+  padding: 0 80px;
   padding-top: 10%;
 }
 
 #footer__heading {
   text-align: left;
   color: #fff;
-  padding-left: 1rem;
 }
 
 .footer-section {
@@ -24,7 +22,6 @@
   text-align: left;
   width: 50%;
   text-align: justify;
-  padding-left: 5rem;
 }
 
 .footer-description {
@@ -36,7 +33,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-right: 5rem;
   color: #fff;
 }
 
@@ -45,7 +41,7 @@
 }
 
 .footer-line {
-  width: 90%;
+  width: 100%;
   margin: 20px 0;
   border: 1px solid #ccc;
 }
@@ -59,6 +55,7 @@
   width: 1.4rem;
   height: 1.4rem;
   padding: 4px;
+  cursor: pointer;
 }
 
 .footer-bottom {
@@ -73,7 +70,6 @@
   padding-bottom: 4rem;
 }
 
-/* Mobile styles */
 @media only screen and (max-width: 767px) {
   #footer__heading,
   .footer-description,

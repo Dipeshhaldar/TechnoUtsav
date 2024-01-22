@@ -11,11 +11,10 @@
 .image-slider-container {
     position: relative;
     overflow: hidden;
-    border: 2px solid #ccc;
     border-radius: 10px;
-    max-width: 980px; /* Set a new maximum width for the slider container */
-    margin: 20px auto; /* Center the slider container and add top margin */
-    padding: 0 20px; /* Add padding to the left and right sides of the container */
+    max-width: 1100px; 
+    margin: 20px auto; 
+    padding: 0 20px; 
   }
   
   .slider {
@@ -24,21 +23,24 @@
   }
   
   .slide {
-    flex: 0 0 100%; /* Make each slide take the full width by default */
+    flex: 0 0 100%; 
     display: flex;
   }
   
   .image-column {
-    flex: 0 0 calc(100% / 3); /* Make each image column take one-third of the width */
-    padding: 10px;
+    display: flex;
+    flex: 0 0 calc(100% / 3); 
+    padding: 48px;
     box-sizing: border-box;
+    justify-content: center;
+    flex-direction: row;
   }
   
   .image-column img {
-    width: 100%; /* Make sure the image takes the full width of the column */
-    height: 250px; /* Set a fixed height for the images */
-    object-fit: cover; /* Maintain the aspect ratio of the image */
-    border-radius: 8px;
+    width: 120%; 
+    height: 280px; 
+    object-fit: cover; 
+    border-radius: 18px;
   }
   
   .arrow {
@@ -64,7 +66,6 @@
     transform: scale(1.1);
   }
   
-  /* Media Query for Mobile Devices */
   @media (max-width: 480px) {
     .image-slider-container {
         max-width: 280px;
@@ -76,15 +77,18 @@
     }
 
     .slider {
-      flex-wrap: nowrap; /* Prevent wrapping to show one image at a time */
+      flex-wrap: nowrap; 
     }
   
     .slide {
-      flex: 0 0 100%; /* Make each slide take the full width */
+      flex: 0 0 100%; 
     }
   
     .image-column {
-      flex: 0 0 100%; /* On mobile, make each image column take the full width */
+      display: flex;
+      flex: 0 0 100%; 
+      padding: 2.5rem;
+      justify-content: center;
     }
   }
   

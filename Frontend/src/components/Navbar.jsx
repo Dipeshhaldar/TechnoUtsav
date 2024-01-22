@@ -1,4 +1,3 @@
-// Navbar.js
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { NavLink, Link, useLocation } from "react-router-dom";
@@ -43,7 +42,7 @@ const Navbar = () => {
               borderBottom:
                 location.pathname === "/events" ? "2px solid white" : "none",
             }}
-            onClick={closeSidebar} /*updated */
+            onClick={closeSidebar}
           >
             Events
           </NavLink>

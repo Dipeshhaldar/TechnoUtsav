@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./Glimpses.css"; // Import your CSS file for styling
+import "./Glimpses.css"; 
 import Footer from "../components/Footer";
 
 const Glimpses = () => {
   const images = [
-    // "/HomePage/i1.jpg",
     "/HomePage/i2.JPG",
-    // "/HomePage/i3.JPG",
     "/HomePage/i4.JPG",
     "/HomePage/i5.JPG",
     "/HomePage/i6.JPG",
@@ -14,16 +12,10 @@ const Glimpses = () => {
     "/HomePage/i8.JPG",
     "/HomePage/i9.JPG",
     "/HomePage/i4.JPG",
-    "/HomePage/i2.JPG",
-    "/HomePage/i2.JPG",
-    "/HomePage/i2.JPG",
-    "/HomePage/i2.JPG",
-    "/HomePage/i2.JPG",
-    "/HomePage/i2.JPG",
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [direction, setDirection] = useState(1); // 1 for forward, -1 for backward
+  const [direction, setDirection] = useState(1); 
   const isMobileView = window.innerWidth <= 600;
 
   const imagesPerSlide = isMobileView ? 1 : 3;
@@ -32,7 +24,7 @@ const Glimpses = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       goToNextSlide();
-    }, 3000); // Auto slide every 3 seconds
+    }, 3000); 
 
     return () => clearInterval(interval);
   }, [currentSlide]);
@@ -81,7 +73,7 @@ const Glimpses = () => {
             ))}
           </div>
           <button className="arrow left" onClick={goToPrevSlide}>
-            &lt;
+            <img src="" alt="" />
           </button>
           <button className="arrow right" onClick={goToNextSlide}>
             &gt;
