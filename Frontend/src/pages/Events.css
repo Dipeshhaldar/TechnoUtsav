@@ -83,6 +83,9 @@ body {
   animation: moveUpDown 1s infinite;
   animation-timing-function: linear;
   border: 2px solid whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .scroll:hover {
