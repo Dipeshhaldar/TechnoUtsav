@@ -10,6 +10,8 @@ app.use(express.json());
 
 const mongoURI = config.mongoURI;
 
+//done my setup to connect my mongo composs to my nodejs
+
 mongoose
   .connect(mongoURI)
   .then(() => app.listen(5500))
