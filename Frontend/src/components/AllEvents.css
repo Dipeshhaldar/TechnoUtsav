@@ -34,6 +34,60 @@
   cursor: pointer;
 }
 
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  position: absolute;
+  top: 125%;
+  height: 340px;
+  width: 800px;
+  overflow-y: auto;
+  margin: 20px 40px;
+  border: 2px solid #269cbc;
+  background: rgba(29, 60, 155, 0.3);
+}
+
+.image-container a {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 14rem;
+  margin-bottom: 10px;
+  object-fit: cover;
+  margin: 10px;
+  transition: filter 0.3s ease-in-out;
+}
+
+.image-container button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: #1d3c9b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  font-weight: bold;
+  border-radius: 15px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container a:hover img {
+  filter: blur(5px); 
+}
+
+.image-container a:hover button {
+  opacity: 1;
+}
+
+
 .center-event {
   border: 1px solid #1d3c9b;
   border-radius: 15px 0 0 15px;
@@ -131,7 +185,8 @@
   }
 
   .image-container {
-    width: 77%;
+    width: 227px;
+    height: 400px;
     text-align: center;
   }
 
@@ -141,7 +196,7 @@
   .image-container-another {
     height: 550px;
     margin: 10px 25px;
-    width: 17rem;
+    /* width: 17rem; */
   }
   .department-heading{
     font-size: 25px;
@@ -151,55 +206,4 @@
 
 
 
-.image-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 20px;
-  position: absolute;
-  top: 125%;
-  height: 480px;
-  overflow-y: auto;
-  margin: 20px 40px;
-  border: 2px solid #269cbc;
-  background: rgba(29, 60, 155, 0.3);
-}
-
-.image-container a {
-  position: relative;
-  overflow: hidden;
-}
-
-.image-container img {
-  width: 14rem;
-  margin-bottom: 10px;
-  object-fit: cover;
-  margin: 10px;
-  transition: filter 0.3s ease-in-out;
-}
-
-.image-container button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
-  background-color: #1d3c9b;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  opacity: 0;
-  font-weight: bold;
-  border-radius: 15px;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.image-container a:hover img {
-  filter: blur(5px); 
-}
-
-.image-container a:hover button {
-  opacity: 1;
-}
 
