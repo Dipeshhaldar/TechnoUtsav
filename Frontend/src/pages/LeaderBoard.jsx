@@ -8,7 +8,7 @@ const LeaderBoard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://dashboard-fep1.onrender.com/api/departments");
+        const response = await axios.get("http://localhost:5500/api/departments");
         const shuffledData = response.data.sort(() => Math.random() - 0.01);
         setLeaderboardData(shuffledData);
       } catch (error) {
