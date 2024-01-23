@@ -18,7 +18,7 @@ export default function HomeDetails() {
                 creativity and innovation.
               </p>
             </div>
-            <Link to="/explore-events" className="explore-button">Explore More</Link>
+            <Link to="/events" className="explore-button">Explore More</Link>
           </div>
           <div className="image-container__1">
             <img src="/HomePage/event image.png" alt="Event Image" />
@@ -28,7 +28,7 @@ export default function HomeDetails() {
         <div className="lower-section">
           {/* For mobile view, reorder elements */}
           <div className="text-container">
-            <h2 className="homedetails__heading">VARCHASVA</h2>
+            <h2 id='homedetails__heading-v' className="homedetails__heading">VARCHASVA</h2>
             <div className="vertical-line">
               <p className="Homedetails-varchasva__description">
                 Get ready for pulse-pounding action in our fest's Sports
@@ -38,7 +38,7 @@ export default function HomeDetails() {
                 celebrate the true spirit of sportsmanship!
               </p>
             </div>
-            <Link to="/explore-varchasva" className="explore-button">Explore More</Link>
+            <Link to="/events" className="explore-button">Explore More</Link>
           </div>
           <div className="image-container__1">
             <img src="/HomePage/workshop image.png" alt="Varchasva Image" />

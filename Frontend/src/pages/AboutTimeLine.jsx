@@ -41,8 +41,8 @@ const AboutTimeLine = () => {
   ];
 
   return (
-    <div className="App">
-      <h1>Reusable React Vertical Timeline</h1>
+    <div className="about__timeline">
+      {/* <h1>Reusable React Vertical Timeline</h1> */}
       <TimeLine events={firstday} />
     </div>
   );

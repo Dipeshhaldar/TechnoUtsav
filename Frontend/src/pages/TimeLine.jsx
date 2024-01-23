@@ -8,11 +8,12 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 import './TimeLine.css'; // Custom styling for the timeline
 
-const WorkIcon = () => <></>;
+// const WorkIcon = () => <></>;
 
 const TimeLine = ({ events }) => {
   return (
     <div className="time__line">
+      <div className='timeline__container'></div>
       <VerticalTimeline>
         {events.map((event, index) => (
           <VerticalTimelineElement
@@ -21,11 +22,12 @@ const TimeLine = ({ events }) => {
             contentStyle={{ background: event.background || 'rgb(33, 150, 243)', color: '#fff' }}
             contentArrowStyle={{ borderRight: `7px solid ${event.background || 'rgb(33, 150, 243)'}` }}
             time={event.time}
-            iconStyle={{ background: event.background || 'rgb(33, 150, 243)', color: '#fff' }}
-            icon={<WorkIcon />}
+            // iconStyle={{ background: event.background || 'rgb(33, 150, 243)', color: '#fff' }}
+            // icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">{event.title}</h3>
             <h4 className="vertical-timeline-element-subtitle">{event.subtitle}</h4>
+            <strong><p>{event.time}</p></strong>
             <p>{event.description}</p>
           </VerticalTimelineElement>
         ))}

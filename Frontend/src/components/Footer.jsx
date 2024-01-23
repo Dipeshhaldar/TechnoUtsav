@@ -18,20 +18,28 @@ const Footer = () => {
           </div>
 
           <div className="footer-right">
-            <div>Home</div>
-            <div>Events</div>
-            <div>Leaderboard</div>
-            <div>About</div>
+            <div><a href="/">Home</a></div>
+            <div><a href="/events">Events</a></div>
+            <div><a href="/leaderboard">Leaderboard</a></div>
+            <div><a href="/about">About</a></div>
           </div>
         </div>
 
         <hr className="footer-line" />
 
         <div className="footer-social">
-          <img src="/HomePage/facebook.png" alt="Facebook Logo" />
-          <img src="/HomePage/youtube.png" alt="Twitter Logo" />
-          <img src="/HomePage/linkedin.png" alt="Twitter Logo" />
-          <img src="/HomePage/instagram.png" alt="Twitter Logo" />
+        <a href="https://www.facebook.com/sbjitmr/">
+            <img src="/HomePage/facebook.png" alt="Facebook Logo" />
+          </a>
+          <a href="https://www.youtube.com/channel/UCh6YlSVHhMzX_uQuEj3yAGg">
+            <img src="/HomePage/youtube.png" alt="YouTube Logo" />
+          </a>
+          <a href="https://in.linkedin.com/school/officialsbjain/">
+            <img src="/HomePage/linkedin.png" alt="LinkedIn Logo" />
+          </a>
+          <a href="https://www.instagram.com/officialsbjain/?hl=en">
+            <img src="/HomePage/instagram.png" alt="Instagram Logo" />
+          </a>
         </div>
 
         <div className="footer-bottom">

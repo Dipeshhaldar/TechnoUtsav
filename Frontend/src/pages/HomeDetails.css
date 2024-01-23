@@ -1,8 +1,9 @@
 .container {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#1f2137, #102856);
-  padding: 0 8rem; 
+  background: linear-gradient(#131531, #102856);
+  padding: 0 8rem;
+  margin-top: 0rem; 
 }
 
 .upper-section,
@@ -33,7 +34,7 @@
 .Homedetails-varchasva__description {
   color: #fff;
   margin-left: 20px; 
-  text-align: justify;
+  /* text-align: justify; */
   font-size: 1rem;
   font-family: 'Prompt', sans-serif;
 }
@@ -60,6 +61,7 @@
   font-size: 14px;
   font-family: 'Prompt', sans-serif;
   margin-top: 10px;
+  text-decoration: none;
   transition: background-color 0.3s, border-color 0.3s; 
 }
 
@@ -73,6 +75,7 @@
 @media (max-width: 480px) {
   .container {
     padding: 0 1rem; 
+    margin-top: -1rem;
   }
 
   .upper-section,
@@ -86,6 +89,12 @@
   .image-container__1 {
     width: 77%;
     text-align: center;
+  }
+
+  .homedetails__heading {
+    /* text-align: center;
+    padding: 0 auto; */
+    font-size: 2rem;
   }
 
   .Homedetails-event__description,

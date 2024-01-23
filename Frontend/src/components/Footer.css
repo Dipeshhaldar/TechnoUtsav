@@ -36,11 +36,15 @@
   flex-direction: column;
   align-items: flex-start;
   color: #fff;
-  font-family: 'Prompt', sans-serif;;
+  font-family: 'Prompt', sans-serif;
+  text-decoration: none;
 }
 
-.footer-right div {
+.footer-right div a {
   margin-bottom: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
 }
 
 .footer-line {

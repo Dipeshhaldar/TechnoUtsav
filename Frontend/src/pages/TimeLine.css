@@ -1,23 +1,28 @@
 .time__line {
-    font-family: sans-serif;
-    text-align: center;
-    background: url('/AboutPage/about-background.jpg');
-    background-size: cover;
-  }
-  
-  .vertical-timeline::before {
-    /* this is the vertical line */
-    background: rgb(100, 255, 218) !important;
-  }
-  
-  .vertical-timeline-element-content {
-    border: 2px solid rgb(100, 255, 218); /* Green border for each event card */
-    border-bottom: none; /* Remove the baseline */
-  }
+  font-family: sans-serif;
+  text-align: center;
+  background: url('/AboutPage/about-background.jpg');
+  background-size: cover;
+  padding-top: 10rem;
+}
 
-  .vertical-timeline-element .vertical-timeline-element-content::before {
-    border: 2px solid rgb(100, 255, 218); /* Border color for the circle */
-  }
-  
-  /* Optional: Adjust the border color and width as needed */
-  
+.vertical-timeline::before {
+  /* Remove the central line by setting the background to transparent */
+  background: transparent !important;
+}
+
+.vertical-timeline-element-content {
+  border: 2px solid rgb(100, 255, 218); /* Green border for each event card */
+  border-bottom: none; /* Remove the baseline */
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-time {
+  color: #fff; /* Set the time color to white */
+}
+
+.vertical-timeline-element .vertical-timeline-element-content::before {
+  border: 2px solid rgb(0, 0, 0); /* Border color for the circle (black) */
+  background-color: rgb(0, 0, 0); /* Circle fill color (black) */
+}
+
+/* Optional: Adjust the border color and width as needed */
