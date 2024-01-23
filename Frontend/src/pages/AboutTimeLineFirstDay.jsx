@@ -47,7 +47,7 @@ const AboutTimeLineFirstDay = () => {
 
   return (
     <div className="about__timeline">
-      <TimeLine events={firstday} />
+      <TimeLine events={firstday} text="26 January 2024 (Friday)" />
     </div>
   );
 };

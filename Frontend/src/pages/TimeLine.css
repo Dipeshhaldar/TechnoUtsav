@@ -6,6 +6,11 @@
   padding-top: 10rem;
 }
 
+.about__timeline {
+  color: #fff;
+  font-family:'Prompt', sans-serif;
+}
+
 .vertical-timeline::before {
   /* Remove the central line by setting the background to transparent */
   background: transparent !important;
@@ -26,3 +31,8 @@
 }
 
 /* Optional: Adjust the border color and width as needed */
+@media (max-width: 480px) {
+  .about__timeline {
+    font-size: 1.5rem;
+  }
+}

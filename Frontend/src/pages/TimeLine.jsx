@@ -10,10 +10,10 @@ import './TimeLine.css'; // Custom styling for the timeline
 
 // const WorkIcon = () => <></>;
 
-const TimeLine = ({ events }) => {
+const TimeLine = ({ events, text }) => {
   return (
     <div className="time__line">
-      <h1>26<sup>th</sup>January 2024 ( Friday )</h1>
+      <h1 className='about__timeline'>{text}</h1>
       <div className='timeline__container'></div>
       <VerticalTimeline>
         {events.map((event, index) => (

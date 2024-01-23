@@ -10,8 +10,11 @@ import Football from "./components/Flow/Football";
 import Volley from "./components/Flow/Volley";
 import Futsal from "./components/Flow/Futsal";
 import Kabbadi from "./components/Flow/Kabbadi";
-import Chess from "./components/Flow/Chess"
+import Chess from "./components/Flow/Chess";
+import AboutMain from "./pages/AboutMain";
 import AboutTimeLineFirstDay from "./pages/AboutTimeLineFirstDay";
+import AboutTimeLineSecondDay from "./pages/AboutTimeLineSecondDay";
+import AboutTimeLineThirdDay from "./pages/AboutTimeLineThirdDay";
 
 function App() {
 
@@ -22,7 +25,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/events" element={<Events />} />
           <Route path="/leaderBoard" element={<LeaderBoard />} />
-          <Route path="/about" element={<AboutTimeLineFirstDay />} />
+          <Route path="/about" element={<AboutMain />} />
           <Route path="/event/cricket" element={<Cricket />} />
           <Route path="/event/thugOfWar" element={<Thug />} />
           <Route path="/event/football" element={<Football />} />
@@ -30,6 +33,11 @@ function App() {
           <Route path="/event/chess" element={<Chess />} />
           <Route path="/event/futSal" element={<Futsal />} />
           <Route path="/event/kabAdi" element={<Kabbadi />} />
+
+          {/* timeline Technotsav */}
+          <Route path="/AboutTimeLineFirstDay" element={<AboutTimeLineFirstDay />} />
+          <Route path="/AboutTimeLineSecondDay" element={<AboutTimeLineSecondDay />} />
+          <Route path="/AboutTimeLineThirdDay" element={<AboutTimeLineThirdDay />} />
         </Routes>
       </>
   );

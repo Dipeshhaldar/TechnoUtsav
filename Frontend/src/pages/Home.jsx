@@ -15,7 +15,7 @@ const Home = () => {
       <div className="home-container">
         <div className="background-image">
           <div className="centered-text">
-            <h1>TECHNOUTSAV</h1>
+            <h1>TECHNOTSAV</h1>
             <br />
             <h1 className="Year-2024">2024</h1>
             <br />

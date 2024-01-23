@@ -1,7 +1,7 @@
 import React from 'react';
 import TimeLine from './TimeLine';
 
-const AboutTimeLineFirstDay = () => {
+const AboutTimeLineSecondDay = () => {
   const secondday = [
     {
       type: 'work',
@@ -47,10 +47,9 @@ const AboutTimeLineFirstDay = () => {
 
   return (
     <div className="about__timeline">
-      <h1>27<sup>th</sup>January 2024 ( Saturday )</h1>
-      <TimeLine events={secondday} />
+      <TimeLine events={secondday} text="27 January 2024 ( Saturday )" />
     </div>
   );
 };
 
-export default AboutTimeLineFirstDay;
+export default AboutTimeLineSecondDay;

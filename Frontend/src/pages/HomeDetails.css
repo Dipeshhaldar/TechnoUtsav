@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#131531, #102856);
+  background: linear-gradient(#121D31, #102856);
   padding: 0 8rem;
   margin-top: 0rem; 
 }
@@ -70,8 +70,6 @@
   background-color: #394a55;
   border-color: #4CAF50; 
 }
-
-
 
 @media (max-width: 480px) {
   .container {
