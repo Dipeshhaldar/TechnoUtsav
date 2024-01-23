@@ -38,14 +38,14 @@
 
 .Year-2024 {
   position: absolute;
-  left: 25rem;
+  left: 20rem;
   letter-spacing: 0.5rem;
   /* top: 8rem; */
 }
 
 .technoutsav__date {
   position: absolute;
-  left: 51%;
+  left: 50%;
   top: 180%;
   font-size: 0.7rem;
   letter-spacing: 0.4rem;
@@ -54,10 +54,10 @@
 
 .centered-text p img {
   position: absolute;
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 3rem;
+  height: 3rem;
   top: 210%;
-  left: 58%;
+  left: 59%;
   animation: bounce 2s infinite;
 }
 
@@ -75,7 +75,7 @@
   .Year-2024 {
     font-size: 2rem;
     text-align: center;
-    left: 8rem;
+    left: 6.4rem;
   }
 
   .technoutsav__date {
@@ -93,8 +93,8 @@
   }
 
   .centered-text p img{
-    width: 2rem;
-    height: 2rem;
+    width: 2.8rem;
+    height: 2.8rem;
     left: 54%;
     top: 12rem;
     animation: bounce 2s infinite;
