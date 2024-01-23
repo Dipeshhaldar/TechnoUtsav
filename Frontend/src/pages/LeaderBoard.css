@@ -1,5 +1,3 @@
-/* LeaderBoard.css */
-
 .home-containers {
   width: 100%;
   height: 100vh;
@@ -114,8 +112,6 @@
 }
 
 
-
-/* Add this to your LeaderBoard.css file */
 @keyframes shuffleAnimation {
   0% {
     transform: translateY(0);
@@ -132,5 +128,5 @@
   animation: shuffleAnimation 1s ease-in-out;
 }
 
-/* Your existing styles */
+
 
