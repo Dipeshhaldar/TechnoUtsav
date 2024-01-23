@@ -1,60 +1,46 @@
-// LeaderBoard.jsx
-
-import { Fragment } from "react";
+import { Fragment, useState, useEffect } from "react";
+import axios from "axios";
 import "./LeaderBoard.css";
 
 const LeaderBoard = () => {
-    return (
-        <Fragment>
-            <div className="home-containers">
-                <div className="background-images">
-                    <img src="/LeaderBoardPage/wallpaperflare 1.png" alt="Background" />
-                    <div className="leaderBoard-container">
-                        <h1 className="heading-leader">LEADERBOARD</h1>
+  const [leaderboardData, setLeaderboardData] = useState([]);
 
-                        {/* Container for rows leha yete ata */}
-                        <div className="leaderboard-rows">
-                            <div className="leaderboard-row">
-                                <div className="row-number">1</div>
-                                <div className="row-text">COMPUTER SCIENCE & ENGINEERING</div>
-                                <div className="row-points">00</div>
-                            </div>
-                            <div className="leaderboard-row">
-                                <div className="row-number">2</div>
-                                <div className="row-text">EMERGING TECHNOLOGIES</div>
-                                <div className="row-points">00</div>
-                            </div>
-                            <div className="leaderboard-row">
-                                <div className="row-number">3</div>
-                                <div className="row-text">ELECTRICAL ENGINEERING</div>
-                                <div className="row-points">00</div>
-                            </div>
-                            <div className="leaderboard-row">
-                                <div className="row-number">4</div>
-                                <div className="row-text">ELECTRONICS AND TELECOMMUNICATION ENGINEERING</div>
-                                <div className="row-points">00</div>
-                            </div>
-                            <div className="leaderboard-row">
-                                <div className="row-number">5</div>
-                                <div className="row-text">MECHANICAL ENGINEERING</div>
-                                <div className="row-points">00</div>
-                            </div>
-                            <div className="leaderboard-row">
-                                <div className="row-number">6</div>
-                                <div className="row-text">MASTER OF BUSINESS ADMINISTRATION</div>
-                                <div className="row-points">00</div>
-                            </div>
-                            <div className="leaderboard-row">
-                                <div className="row-number">7</div>
-                                <div className="row-text">FIRST YEAR ENGINEERING</div>
-                                <div className="row-points">00</div>
-                            </div>
-                        </div>
-                    </div>
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("http://localhost:5500/api/departments");
+        const shuffledData = response.data.sort(() => Math.random() - 0.01);
+        setLeaderboardData(shuffledData);
+      } catch (error) {
+        console.error("Error fetching leaderboard data:", error.message);
+      }
+    };
+
+    fetchData();
+  }, [leaderboardData]); 
+
+  return (
+    <Fragment>
+      <div className="home-containers">
+        <div className="background-images">
+          <img src="/LeaderBoardPage/wallpaperflare 1.png" alt="Background" />
+          <div className="leaderBoard-container">
+            <h1 className="heading-leader">LEADERBOARD</h1>
+
+            <div className="leaderboard-rows">
+              {leaderboardData.map((row, index) => (
+                <div className="leaderboard-row" key={index}>
+                  <div className="row-number">{index + 1}</div>
+                  <div className="row-text">{row.departmentName}</div>
+                  <div className="row-points">{row.departmentScore}</div>
                 </div>
+              ))}
             </div>
-        </Fragment>
-    );
+          </div>
+        </div>
+      </div>
+    </Fragment>
+  );
 };
 
 export default LeaderBoard;
