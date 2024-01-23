@@ -2,7 +2,7 @@
 
 .outer-container-all_events {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: black;
   display: flex;
   align-items: center;
@@ -55,32 +55,6 @@
   font-weight: bold;
   margin-bottom: 10px;
   color: #ffffff;
-}
-
-/* Images section */
-
-/* ImageContainer.css */
-
-.image-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 20px;
-  position: absolute;
-  top: 125%;
-  height: 480px;
-  overflow-y: auto;
-  margin: 20px 40px;
-  border: 2px solid #269cbc;
-  background: rgba(29, 60, 155, 0.3);
-}
-
-.image-container img {
-  width: 14rem;
-  margin-bottom: 10px;
-  object-fit: cover;
-  margin: 10px;
 }
 
 .image-container-another {
