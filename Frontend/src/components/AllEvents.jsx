@@ -6,7 +6,7 @@ const AllEvents = () => {
   const navigate = useNavigate();
 
   const [varchasvaActive, setVarchasvaActive] = useState(false);
-  const [centerActive, setCenterActive] = useState(false);
+  const [centerActive, setCenterActive] = useState(true);
   const [departmentActive, setDepartmentActive] = useState(false);
 
   const handleVarchasvaClick = () => {
