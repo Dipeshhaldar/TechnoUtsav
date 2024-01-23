@@ -21,7 +21,7 @@ const Insert = () => {
     e.preventDefault();
     
     try {
-      const response = await axios.post('https://dashboard-fep1.onrender.com/api/aadDepartments', formData);
+      const response = await axios.post('http://localhost:5500/api/aadDepartments', formData);
       console.log(response.data); 
       alert("added");
     } catch (error) {
