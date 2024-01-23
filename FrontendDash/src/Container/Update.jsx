@@ -10,7 +10,7 @@ const Update = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5500/api/departments');
+        const response = await axios.get('https://dashboard-fep1.onrender.com/api/departments');
         setDepartments(response.data);
       } catch (error) {
         console.error('Error fetching departments:', error.message);
@@ -22,7 +22,7 @@ const Update = () => {
 
   const handleUpdate = async () => {
     try {
-      const response = await axios.put(`http://localhost:5500/api/updateDepartments/${selectedDepartment._id}`, {
+      const response = await axios.put(`https://dashboard-fep1.onrender.com/api/updateDepartments/${selectedDepartment._id}`, {
         departmentName: selectedDepartment.departmentName,
         departmentScore: selectedDepartment.departmentScore,
       });
@@ -35,7 +35,7 @@ const Update = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await axios.delete(`http://localhost:5500/api/deleteDepartments/${id}`);
+      const response = await axios.delete(`https://dashboard-fep1.onrender.com/api/deleteDepartments/${id}`);
       console.log(response.data);
       alert('Department deleted successfully');
     } catch (error) {
