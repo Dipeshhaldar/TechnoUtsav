@@ -1,9 +1,7 @@
-// App.js or any other component
-
 import React from 'react';
 import TimeLine from './TimeLine';
 
-const AboutTimeLine = () => {
+const AboutTimeLineFirstDay = () => {
   const firstday = [
     {
       type: 'work',
@@ -37,15 +35,21 @@ const AboutTimeLine = () => {
         description: 'Energetic band performance lights up talent show stage.',
         background: 'transparent',
       },
-    // Add more timeline events as needed
+      {
+        type: 'work',
+        time: '04:30 pm - 07:30 pm',
+        title: 'Dance Performances',
+        subtitle: 'Venue:- Stage',
+        description: 'Captivating dance performances showcase artistry, rhythm, and expressive movements beautifully.',
+        background: 'transparent',
+      },
   ];
 
   return (
     <div className="about__timeline">
-      {/* <h1>Reusable React Vertical Timeline</h1> */}
       <TimeLine events={firstday} />
     </div>
   );
 };
 
-export default AboutTimeLine;
+export default AboutTimeLineFirstDay;

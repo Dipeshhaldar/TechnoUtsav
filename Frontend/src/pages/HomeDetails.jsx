@@ -18,7 +18,7 @@ export default function HomeDetails() {
                 creativity and innovation.
               </p>
             </div>
-            <Link to="/events" className="explore-button">Explore More</Link>
+              <Link to="/events" className="explore-button">Explore More</Link>
           </div>
           <div className="image-container__1">
             <img src="/HomePage/event image.png" alt="Event Image" />
@@ -38,7 +38,7 @@ export default function HomeDetails() {
                 celebrate the true spirit of sportsmanship!
               </p>
             </div>
-            <Link to="/events" className="explore-button">Explore More</Link>
+              <Link to="/events" className="explore-button">Explore More</Link>
           </div>
           <div className="image-container__1">
             <img src="/HomePage/workshop image.png" alt="Varchasva Image" />

@@ -13,6 +13,7 @@ import './TimeLine.css'; // Custom styling for the timeline
 const TimeLine = ({ events }) => {
   return (
     <div className="time__line">
+      <h1>26<sup>th</sup>January 2024 ( Friday )</h1>
       <div className='timeline__container'></div>
       <VerticalTimeline>
         {events.map((event, index) => (
