@@ -20,7 +20,7 @@ const AboutMain = () => {
   return (
     <>
       <div className="card-container">
-        <h1 id='aboutmain__heading'>Shedule</h1>
+        <h1 id='aboutmain__heading'>Schedule</h1>
       <div className="card" onClick={handleCardClick1}>
         <h2>Day 1</h2>
         <p>Technotsav Day 1: Exciting sports semi-finals, grand inauguration, dynamic youth parliament, mesmerizing dance performances, and electrifying band showcase.</p>

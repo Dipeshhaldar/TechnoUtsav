@@ -134,9 +134,11 @@ const AllEvents = () => {
     {
       heading: "ELECTRICAL ENGINEERING",
       images: [
-        "/EventsPage/image4.jpg",
-        "/EventsPage/image5.jpg",
-        "/EventsPage/image6.jpg",
+        "/EventsPage/newEvents/techno1.jpg",
+        "/EventsPage/newEvents/techno2.jpg",
+        "/EventsPage/newEvents/techno3.jpg",
+        "/EventsPage/newEvents/techno4.jpg",
+        "/EventsPage/newEvents/techno5.jpg",
       ],
     },
     {
@@ -145,7 +147,6 @@ const AllEvents = () => {
         "/EventsPage/EmTech/Battleverse.png",
         "/EventsPage/EmTech/Blind C.jpg",
         "/EventsPage/EmTech/Bounty hunt.jpg",
-        "/EventsPage/EmTech/Break the query.png",
         "/EventsPage/EmTech/codotech.jpg",
         "/EventsPage/EmTech/Data visualizing and dashboard designing.jpg",
         "/EventsPage/EmTech/Designo.jpg",
@@ -174,7 +175,7 @@ const AllEvents = () => {
       heading: "MECHANICAL ENGINEERING",
       images: [
         "/EventsPage/ME/Horror excape room.jpg",
-        "/EventsPage/ME/Takeshi's Castle.jpg",
+        "/EventsPage/newEvents/techno7.png",
       ],
     },
 

@@ -68,7 +68,7 @@ const Navbar = () => {
             }}
             onClick={closeSidebar}
           >
-            About
+            Schedule
           </NavLink>
         </div>
         <div className="navbar-icon" onClick={toggleSidebar}>
