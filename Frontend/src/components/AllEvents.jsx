@@ -201,6 +201,7 @@ const AllEvents = () => {
               color: centerActive ? "#D9D9D9" : "",
             }}
             onClick={handleCenterActive}
+            // updated
           >
             CenterStage Event
           </div>
